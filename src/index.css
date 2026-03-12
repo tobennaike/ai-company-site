@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 10%;
+    --primary: 28 25% 38%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 30 10% 95%;
+    --muted: 30 10% 95%;
+    --muted-foreground: 25 5% 45%;
+    --accent: 30 10% 95%;
+    --border: 30 8% 88%;
+    --ring: 28 25% 38%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 30 10% 93%;
+    --card: 24 9.8% 10%;
+    --card-foreground: 30 10% 93%;
+    --primary: 28 40% 55%;
+    --primary-foreground: 20 14.3% 4.1%;
+    --secondary: 20 6% 15%;
+    --muted: 20 6% 15%;
+    --muted-foreground: 30 5% 60%;
+    --accent: 20 6% 15%;
+    --border: 20 6% 18%;
+    --ring: 28 40% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-[hsl(var(--border))];
+  }
+  body {
+    @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))];
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+::selection {
+  background: hsl(28 25% 38% / 0.25);
+}
