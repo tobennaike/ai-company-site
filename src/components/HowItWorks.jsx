@@ -33,25 +33,25 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-24 sm:py-32 bg-[hsl(var(--muted))]/50">
+    <section id="how-it-works" className="py-20 sm:py-24 md:py-32 bg-[hsl(var(--muted))]/50">
       <div className="container">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <span className="inline-block text-sm font-medium text-[hsl(var(--primary))] mb-3">Process</span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             How It{' '}
             <span className="bg-gradient-to-b from-[hsl(var(--primary))]/60 to-[hsl(var(--primary))] text-transparent bg-clip-text">
               Works
             </span>
           </h2>
-          <p className="text-lg text-[hsl(var(--muted-foreground))] max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-[hsl(var(--muted-foreground))] max-w-2xl mx-auto">
             A simple, proven process to bring AI into your business.
           </p>
         </div>
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6">
           {steps.map((step) => (
             <div
               key={step.number}
-              className="bg-[hsl(var(--card))] border border-[hsl(var(--border))] rounded-xl p-8 text-center relative"
+              className="bg-[hsl(var(--card))] border border-[hsl(var(--border))] rounded-xl p-6 sm:p-8 text-center relative mt-4"
             >
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] text-xs font-bold px-3 py-1 rounded-full">
                 Step {step.number}
@@ -59,7 +59,7 @@ export default function HowItWorks() {
               <div className="w-12 h-12 rounded-lg bg-[hsl(var(--primary))]/10 text-[hsl(var(--primary))] flex items-center justify-center mx-auto mb-5 mt-2">
                 {step.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+              <h3 className="text-lg sm:text-xl font-semibold mb-2">{step.title}</h3>
               <p className="text-sm text-[hsl(var(--muted-foreground))] leading-relaxed">{step.description}</p>
             </div>
           ))}

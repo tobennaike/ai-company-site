@@ -40,30 +40,30 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 sm:py-32">
+    <section id="services" className="py-20 sm:py-24 md:py-32">
       <div className="container">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <span className="inline-block text-sm font-medium text-[hsl(var(--primary))] mb-3">Services</span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             What{' '}
             <span className="bg-gradient-to-b from-[hsl(var(--primary))]/60 to-[hsl(var(--primary))] text-transparent bg-clip-text">
               We Do
             </span>
           </h2>
-          <p className="text-lg text-[hsl(var(--muted-foreground))] max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-[hsl(var(--muted-foreground))] max-w-2xl mx-auto">
             End-to-end AI solutions tailored for small and mid-size businesses.
           </p>
         </div>
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
           {services.map((service) => (
             <div
               key={service.title}
-              className="bg-[hsl(var(--card))] border border-[hsl(var(--border))] rounded-xl p-6 hover:shadow-lg hover:shadow-[hsl(var(--primary))]/5 transition-all duration-300 group"
+              className="bg-[hsl(var(--card))] border border-[hsl(var(--border))] rounded-xl p-5 sm:p-6 hover:shadow-lg hover:shadow-[hsl(var(--primary))]/5 transition-all duration-300 group"
             >
-              <div className="w-12 h-12 rounded-lg bg-[hsl(var(--primary))]/10 text-[hsl(var(--primary))] flex items-center justify-center mb-4 group-hover:bg-[hsl(var(--primary))]/15 transition-colors">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-[hsl(var(--primary))]/10 text-[hsl(var(--primary))] flex items-center justify-center mb-4 group-hover:bg-[hsl(var(--primary))]/15 transition-colors">
                 {service.icon}
               </div>
-              <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
+              <h3 className="text-base sm:text-lg font-semibold mb-2">{service.title}</h3>
               <p className="text-sm text-[hsl(var(--muted-foreground))] leading-relaxed">{service.description}</p>
             </div>
           ))}
