@@ -21,9 +21,8 @@ export default function About() {
             Meet the Partners
           </h2>
           <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto">
-            With experience across industrials, services, real estate, and technology,
-            we understand how businesses operate and scale. Now we're bringing that
-            expertise to AI — helping SMBs automate, grow, and compete.
+            We've operated, advised, and invested across industries. Now we build
+            the AI that makes businesses like yours run better.
           </p>
         </div>
         <div className="max-w-md sm:max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
