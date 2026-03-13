@@ -1,30 +1,16 @@
-const capabilities = [
-  'Workflow Automation',
-  'Document Processing',
-  'Data Entry & Migration',
-  'Customer Support AI',
-  'Reporting & Analytics',
-  'Custom Integrations',
-]
-
 export default function Sponsors() {
   return (
-    <section className="py-12 sm:py-16">
+    <section className="py-16 sm:py-20">
       <div className="container">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-center text-sm font-medium text-gray-400 mb-6 uppercase tracking-[0.2em]">
-            Built for Small & Mid-Size Businesses
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal tracking-[-0.02em] text-gray-900 mb-4">
+            AI that was built for{' '}
+            <span className="italic">your</span> business.
+          </h2>
+          <p className="text-base sm:text-lg text-gray-500 max-w-xl mx-auto">
+            Most AI tools are designed for enterprises with big budgets and dedicated tech teams.
+            We bring that same power to small and mid-size businesses — no complexity, no overhead.
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-3">
-            {capabilities.map((item) => (
-              <span
-                key={item}
-                className="text-sm font-medium text-gray-600 bg-gray-50 border border-gray-200 px-4 py-2 rounded-full"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
         </div>
       </div>
     </section>
