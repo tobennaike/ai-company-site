@@ -3,13 +3,11 @@ const founders = [
     name: 'Tobenna Ikejiani',
     role: 'Co-Founder',
     initials: 'TI',
-    bio: 'Finance and operations background. Focused on strategy, client relationships, and scaling the business.',
   },
   {
     name: 'Melchzedeck Kimario',
     role: 'Co-Founder',
     initials: 'MK',
-    bio: 'Engineering and AI background. Leads technical architecture, model development, and product delivery.',
   },
 ]
 
@@ -36,14 +34,13 @@ export default function About() {
             >
               <div className="relative">
                 {/* Avatar */}
-                <div className="w-18 h-18 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br from-gray-800 to-gray-600 text-white text-xl sm:text-2xl font-bold flex items-center justify-center mx-auto mb-5"
+                <div className="w-18 h-18 sm:w-20 sm:h-20 rounded-2xl bg-gray-900 text-white text-xl sm:text-2xl font-bold flex items-center justify-center mx-auto mb-5"
                   style={{ width: '4.5rem', height: '4.5rem' }}
                 >
                   {founder.initials}
                 </div>
                 <h3 className="text-base sm:text-lg font-semibold tracking-tight text-gray-900">{founder.name}</h3>
-                <p className="text-sm text-gray-500 font-medium mb-3">{founder.role}</p>
-                <p className="text-sm text-gray-500 leading-relaxed">{founder.bio}</p>
+                <p className="text-sm text-gray-500 font-medium">{founder.role}</p>
               </div>
             </div>
           ))}
