@@ -8,6 +8,7 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
       </svg>
     ),
+    accent: 'from-[hsl(var(--primary))] to-[hsl(var(--primary))]/60',
   },
   {
     title: 'Document Processing',
@@ -17,6 +18,7 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
       </svg>
     ),
+    accent: 'from-[hsl(var(--accent))] to-[hsl(var(--accent))]/60',
   },
   {
     title: 'Custom AI Integrations',
@@ -26,6 +28,7 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
       </svg>
     ),
+    accent: 'from-[hsl(var(--primary))] to-[hsl(var(--accent))]',
   },
   {
     title: 'AI Strategy & Consulting',
@@ -35,6 +38,7 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
       </svg>
     ),
+    accent: 'from-[hsl(var(--accent))] to-[hsl(var(--primary))]',
   },
 ]
 
@@ -43,28 +47,27 @@ export default function Services() {
     <section id="services" className="py-20 sm:py-24 md:py-32">
       <div className="container">
         <div className="text-center mb-12 sm:mb-16">
-          <span className="inline-block text-sm font-medium text-[hsl(var(--primary))] mb-3">Services</span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
-            What{' '}
-            <span className="bg-gradient-to-b from-[hsl(var(--primary))]/60 to-[hsl(var(--primary))] text-transparent bg-clip-text">
-              We Do
-            </span>
+          <span className="inline-flex items-center text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 px-3 py-1 rounded-full mb-4 uppercase tracking-widest">Services</span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal tracking-[-0.02em] mb-4 text-gray-900">
+            What We Do
           </h2>
-          <p className="text-base sm:text-lg text-[hsl(var(--muted-foreground))] max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto">
             End-to-end AI solutions tailored for small and mid-size businesses.
           </p>
         </div>
-        <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
           {services.map((service) => (
             <div
               key={service.title}
-              className="bg-[hsl(var(--card))] border border-[hsl(var(--border))] rounded-xl p-5 sm:p-6 hover:shadow-lg hover:shadow-[hsl(var(--primary))]/5 transition-all duration-300 group"
+              className="group relative bg-white border border-gray-100 rounded-2xl p-6 sm:p-7 hover:border-gray-200 hover:shadow-lg hover:shadow-black/5 hover:-translate-y-0.5 transition-all duration-300"
             >
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-[hsl(var(--primary))]/10 text-[hsl(var(--primary))] flex items-center justify-center mb-4 group-hover:bg-[hsl(var(--primary))]/15 transition-colors">
-                {service.icon}
+              <div>
+                <div className="w-11 h-11 rounded-xl bg-gray-100 text-gray-700 flex items-center justify-center mb-5 transition-shadow duration-300">
+                  {service.icon}
+                </div>
+                <h3 className="text-base sm:text-lg font-semibold mb-2 tracking-tight text-gray-900">{service.title}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{service.description}</p>
               </div>
-              <h3 className="text-base sm:text-lg font-semibold mb-2">{service.title}</h3>
-              <p className="text-sm text-[hsl(var(--muted-foreground))] leading-relaxed">{service.description}</p>
             </div>
           ))}
         </div>

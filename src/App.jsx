@@ -10,16 +10,20 @@ import Footer from './components/Footer'
 
 export default function App() {
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <Hero />
-      <Sponsors />
-      <Services />
-      <Stats />
-      <HowItWorks />
-      <About />
-      <Contact />
-      <Footer />
+    <div className="min-h-screen relative">
+      {/* Very subtle grid background overlay */}
+      <div className="fixed inset-0 bg-grid mask-fade-b opacity-[0.08] pointer-events-none" aria-hidden="true" />
+      <div className="relative z-10">
+        <Navbar />
+        <Hero />
+        <Sponsors />
+        <Services />
+        <Stats />
+        <HowItWorks />
+        <About />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   )
 }

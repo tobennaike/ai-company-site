@@ -33,34 +33,36 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-20 sm:py-24 md:py-32 bg-[hsl(var(--muted))]/50">
-      <div className="container">
+    <section id="how-it-works" className="py-20 sm:py-24 md:py-32 relative">
+      {/* Subtle background differentiation */}
+      <div className="absolute inset-0 bg-gray-50/80" />
+      <div className="container relative">
         <div className="text-center mb-12 sm:mb-16">
-          <span className="inline-block text-sm font-medium text-[hsl(var(--primary))] mb-3">Process</span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
-            How It{' '}
-            <span className="bg-gradient-to-b from-[hsl(var(--primary))]/60 to-[hsl(var(--primary))] text-transparent bg-clip-text">
-              Works
-            </span>
+          <span className="inline-flex items-center text-xs font-medium bg-gray-100 text-gray-600 border border-gray-200 px-3 py-1 rounded-full mb-4 uppercase tracking-widest">Process</span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal tracking-[-0.02em] mb-4 text-gray-900">
+            How It Works
           </h2>
-          <p className="text-base sm:text-lg text-[hsl(var(--muted-foreground))] max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto">
             A simple, proven process to bring AI into your business.
           </p>
         </div>
-        <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6">
-          {steps.map((step) => (
+        <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6">
+          {steps.map((step, i) => (
             <div
               key={step.number}
-              className="bg-[hsl(var(--card))] border border-[hsl(var(--border))] rounded-xl p-6 sm:p-8 text-center relative mt-4"
+              className={`relative group ${i < steps.length - 1 ? 'step-connector' : ''}`}
             >
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] text-xs font-bold px-3 py-1 rounded-full">
-                Step {step.number}
+              <div className="bg-white border border-gray-100 rounded-2xl p-6 sm:p-8 text-center hover:border-gray-200 hover:shadow-lg hover:shadow-black/5 hover:-translate-y-0.5 transition-all duration-300 h-full">
+                {/* Step number */}
+                <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-900 text-white text-sm font-bold mb-5">
+                  {step.number}
+                </div>
+                <div className="w-12 h-12 rounded-xl bg-gray-100 text-gray-600 flex items-center justify-center mx-auto mb-5">
+                  {step.icon}
+                </div>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2 tracking-tight text-gray-900">{step.title}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{step.description}</p>
               </div>
-              <div className="w-12 h-12 rounded-lg bg-[hsl(var(--primary))]/10 text-[hsl(var(--primary))] flex items-center justify-center mx-auto mb-5 mt-2">
-                {step.icon}
-              </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2">{step.title}</h3>
-              <p className="text-sm text-[hsl(var(--muted-foreground))] leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>
