@@ -29,8 +29,7 @@
     @apply border-[hsl(var(--border))];
   }
   body {
-    @apply text-[hsl(var(--foreground))];
-    background-color: #FAFAF8;
+    @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))];
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
