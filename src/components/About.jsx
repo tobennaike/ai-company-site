@@ -18,12 +18,12 @@ export default function About() {
         <div className="text-center mb-16 sm:mb-20">
           <span className="inline-flex items-center text-xs font-medium bg-gray-100 text-gray-600 border border-gray-200 px-3 py-1 rounded-full mb-4 uppercase tracking-widest">Team</span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal tracking-[-0.02em] mb-4 text-gray-900">
-            Built by Operators
+            Meet the Partners
           </h2>
           <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto">
-            We believe every business deserves access to AI.
-            We partner with SMBs as their fractional AI department, delivering enterprise-grade
-            automation at a fraction of the cost.
+            With backgrounds in investment banking and private equity, we understand
+            how businesses scale. Now we're bringing that same rigor to AI — partnering
+            with SMBs as their fractional AI department.
           </p>
         </div>
         <div className="max-w-md sm:max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">

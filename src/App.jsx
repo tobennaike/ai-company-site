@@ -1,6 +1,5 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Sponsors from './components/Sponsors'
 import Services from './components/Services'
 import Stats from './components/Stats'
 import HowItWorks from './components/HowItWorks'
@@ -16,7 +15,6 @@ export default function App() {
       <div className="relative z-10">
         <Navbar />
         <Hero />
-        <Sponsors />
         <Services />
         <Stats />
         <HowItWorks />
