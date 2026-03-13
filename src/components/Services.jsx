@@ -36,6 +36,15 @@ const services = [
       </svg>
     ),
   },
+  {
+    title: 'Custom AI Software',
+    description: 'Bespoke AI tools and workflows built specifically for your business. From internal dashboards to automated decision engines — tailored to how you operate.',
+    icon: (
+      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+      </svg>
+    ),
+  },
 ]
 
 export default function Services() {
@@ -52,10 +61,10 @@ export default function Services() {
           </p>
         </div>
         <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
-          {services.map((service) => (
+          {services.map((service, i) => (
             <div
               key={service.title}
-              className="group relative bg-white border border-gray-100 rounded-2xl p-6 sm:p-7 hover:border-gray-200 hover:shadow-lg hover:shadow-black/5 hover:-translate-y-0.5 transition-all duration-300"
+              className={`group relative bg-white border border-gray-100 rounded-2xl p-6 sm:p-7 hover:border-gray-200 hover:shadow-lg hover:shadow-black/5 hover:-translate-y-0.5 transition-all duration-300${i === services.length - 1 ? ' sm:col-span-2' : ''}`}
             >
               <div>
                 <div className="w-11 h-11 rounded-xl bg-gray-100 text-gray-700 flex items-center justify-center mb-5 transition-shadow duration-300">

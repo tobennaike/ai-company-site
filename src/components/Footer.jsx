@@ -7,6 +7,7 @@ const footerLinks = {
     { label: 'Marketing & Lead Gen', href: '#services' },
     { label: 'Operations', href: '#services' },
     { label: 'Customer Support AI', href: '#services' },
+    { label: 'Custom AI Software', href: '#services' },
   ],
   Company: [
     { label: 'About', href: '#about' },
