@@ -9,10 +9,10 @@ export default function Hero() {
           </span>
 
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-normal tracking-[-0.02em] leading-[1.1] mb-6 text-gray-900">
-            AI that works from{' '}
+            AI built for{' '}
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 text-transparent bg-clip-text">
-                week one
+                how you work
               </span>
               <span className="absolute -bottom-1 left-0 right-0 h-[3px] bg-gradient-to-r from-gray-900 via-gray-500 to-transparent rounded-full" />
             </span>
