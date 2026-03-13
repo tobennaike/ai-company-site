@@ -67,22 +67,18 @@ export default function Services() {
               key={service.title}
               className={`group relative rounded-2xl p-6 sm:p-7 hover:-translate-y-0.5 transition-all duration-300 ${
                 service.featured
-                  ? 'sm:col-span-2 bg-gray-900 text-white shadow-xl shadow-gray-900/20 ring-1 ring-gray-900/10'
+                  ? 'sm:col-span-2 bg-gray-50 border-2 border-gray-200 shadow-md shadow-gray-200/50 ring-1 ring-gray-100'
                   : 'bg-white border border-gray-100 hover:border-gray-200 hover:shadow-lg hover:shadow-black/5'
               }`}
             >
               <div>
                 <div className={`w-11 h-11 rounded-xl flex items-center justify-center mb-5 ${
-                  service.featured ? 'bg-white/15 text-white' : 'bg-gray-100 text-gray-700'
+                  service.featured ? 'bg-gray-200 text-gray-700' : 'bg-gray-100 text-gray-700'
                 }`}>
                   {service.icon}
                 </div>
-                <h3 className={`text-base sm:text-lg font-semibold mb-2 tracking-tight ${
-                  service.featured ? 'text-white' : 'text-gray-900'
-                }`}>{service.title}</h3>
-                <p className={`text-sm leading-relaxed ${
-                  service.featured ? 'text-gray-300' : 'text-gray-500'
-                }`}>{service.description}</p>
+                <h3 className="text-base sm:text-lg font-semibold mb-2 tracking-tight text-gray-900">{service.title}</h3>
+                <p className="text-sm leading-relaxed text-gray-500">{service.description}</p>
               </div>
             </div>
           ))}
