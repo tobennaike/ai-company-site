@@ -1,13 +1,13 @@
 const founders = [
   {
-    name: 'Tobenna Ikejiani',
-    role: 'Co-Founder',
-    initials: 'TI',
-  },
-  {
     name: 'Melchzedeck Kimario',
     role: 'Co-Founder',
     initials: 'MK',
+  },
+  {
+    name: 'Tobenna Ikejiani',
+    role: 'Co-Founder',
+    initials: 'TI',
   },
 ]
 
