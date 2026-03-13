@@ -7,7 +7,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="py-12 sm:py-16">
+    <section className="py-8 sm:py-10">
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">

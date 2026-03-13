@@ -4,8 +4,7 @@ export default function Sponsors() {
       <div className="container">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal tracking-[-0.02em] text-gray-900 mb-4">
-            AI that was built for{' '}
-            <span className="italic">your</span> business.
+            AI that was built for your business.
           </h2>
           <p className="text-base sm:text-lg text-gray-500 max-w-xl mx-auto">
             Most AI tools are designed for enterprises with big budgets and dedicated tech teams.

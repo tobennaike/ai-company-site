@@ -40,7 +40,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 sm:py-24 md:py-32">
+    <section id="services" className="py-16 sm:py-20">
       <div className="container">
         <div className="text-center mb-12 sm:mb-16">
           <span className="inline-flex items-center text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 px-3 py-1 rounded-full mb-4 uppercase tracking-widest">Services</span>
