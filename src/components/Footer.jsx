@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { COMPANY_NAME } from '../constants'
 import { LogoFullFooter } from './Logo'
 
@@ -15,8 +16,8 @@ const footerLinks = {
     { label: 'Contact', href: '#contact' },
   ],
   Legal: [
-    { label: 'Privacy Policy', href: '#' },
-    { label: 'Terms of Service', href: '#' },
+    { label: 'Privacy Policy', href: '/privacy', isRoute: true },
+    { label: 'Terms of Service', href: '/terms', isRoute: true },
   ],
 }
 
@@ -38,12 +39,21 @@ export default function Footer() {
               <ul className="space-y-2.5">
                 {links.map((link) => (
                   <li key={link.label}>
-                    <a
-                      href={link.href}
-                      className="text-sm text-gray-400 hover:text-gray-900 transition-colors duration-200"
-                    >
-                      {link.label}
-                    </a>
+                    {link.isRoute ? (
+                      <Link
+                        to={link.href}
+                        className="text-sm text-gray-400 hover:text-gray-900 transition-colors duration-200"
+                      >
+                        {link.label}
+                      </Link>
+                    ) : (
+                      <a
+                        href={link.href}
+                        className="text-sm text-gray-400 hover:text-gray-900 transition-colors duration-200"
+                      >
+                        {link.label}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -55,10 +65,6 @@ export default function Footer() {
           <p className="text-gray-400 text-xs">
             &copy; {new Date().getFullYear()} {COMPANY_NAME}. All rights reserved.
           </p>
-          <div className="flex items-center gap-1 text-gray-300 text-xs">
-            <span className="w-1.5 h-1.5 rounded-full bg-green-400" />
-            All systems operational
-          </div>
         </div>
       </div>
     </footer>
