@@ -31,9 +31,6 @@ export default function Footer() {
             <div className="mb-3">
               <LogoFullFooter />
             </div>
-            <p className="text-sm text-gray-400 leading-relaxed">
-              Your fractional AI department.
-            </p>
           </div>
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
