@@ -3,10 +3,10 @@ import { LogoFullFooter } from './Logo'
 
 const footerLinks = {
   Services: [
-    { label: 'Workflow Automation', href: '#services' },
-    { label: 'Document Processing', href: '#services' },
-    { label: 'Custom Integrations', href: '#services' },
-    { label: 'Consulting', href: '#services' },
+    { label: 'Sales & CRM', href: '#services' },
+    { label: 'Marketing & Lead Gen', href: '#services' },
+    { label: 'Operations', href: '#services' },
+    { label: 'Customer Support AI', href: '#services' },
   ],
   Company: [
     { label: 'About', href: '#about' },
