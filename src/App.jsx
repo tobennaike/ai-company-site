@@ -1,8 +1,11 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Services from './components/Services'
+import InvoiceDemo from './components/InvoiceDemo'
 import Stats from './components/Stats'
+import Pricing from './components/Pricing'
 import HowItWorks from './components/HowItWorks'
+import FreeAudit from './components/FreeAudit'
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -16,8 +19,11 @@ export default function App() {
         <Navbar />
         <Hero />
         <Services />
+        <InvoiceDemo />
         <Stats />
+        <Pricing />
         <HowItWorks />
+        <FreeAudit />
         <About />
         <Contact />
         <Footer />

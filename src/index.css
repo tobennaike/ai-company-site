@@ -108,6 +108,11 @@ html {
   animation: fade-up 0.6s ease-out forwards;
 }
 
+@keyframes progress {
+  from { width: 0% }
+  to { width: 100% }
+}
+
 /* Connector line for steps */
 .step-connector {
   position: relative;
