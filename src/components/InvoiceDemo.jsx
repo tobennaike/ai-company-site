@@ -155,7 +155,7 @@ export default function InvoiceDemo() {
                       <span className="text-xs font-medium text-gray-700">Nexcore_Invoice_March.pdf</span>
                       {phase === 3 && (
                         <span className="ml-auto text-xs font-medium text-emerald-600 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full">
-                          Auto-posted to QuickBooks
+                          Auto-verified ✓
                         </span>
                       )}
                     </div>
@@ -185,13 +185,10 @@ export default function InvoiceDemo() {
                     {/* Confidence */}
                     {phase === 3 && (
                       <div className="mt-auto pt-3 border-t border-gray-100 flex items-center justify-between">
-                        <span className="text-xs text-gray-400">Confidence score</span>
-                        <div className="flex items-center gap-2">
-                          <div className="w-20 h-1.5 bg-gray-100 rounded-full overflow-hidden">
-                            <div className="h-full w-[97%] bg-emerald-400 rounded-full" />
-                          </div>
-                          <span className="text-xs font-semibold text-emerald-600">97.2%</span>
-                        </div>
+                        <span className="text-xs text-gray-400">Verification status</span>
+                        <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full">
+                          Auto-verified ✓
+                        </span>
                       </div>
                     )}
                   </div>
