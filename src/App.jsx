@@ -19,8 +19,8 @@ export default function App() {
         <Navbar />
         <Hero />
         <Services />
-        <InvoiceDemo />
         <Stats />
+        <InvoiceDemo />
         <Pricing />
         <HowItWorks />
         <FreeAudit />
