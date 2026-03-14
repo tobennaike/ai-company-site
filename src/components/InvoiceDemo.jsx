@@ -135,7 +135,7 @@ export default function InvoiceDemo() {
                     </div>
                     <p className="text-sm text-gray-500">Extracting fields with AI...</p>
                     <div className="w-48 h-1.5 bg-gray-100 rounded-full overflow-hidden">
-                      <div className="h-full bg-gray-400 rounded-full animate-[progress_1.8s_ease-in-out_forwards]" />
+                      <div className="h-full bg-gray-400 rounded-full" style={{ animation: 'progress 1.8s ease-in-out forwards' }} />
                     </div>
                   </div>
                 )}
