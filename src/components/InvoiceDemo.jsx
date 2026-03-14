@@ -63,16 +63,16 @@ export default function InvoiceDemo() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-8 items-center">
           {/* Left: Features + badges */}
           <div className="space-y-8">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 gap-4">
               {[
                 { icon: '⚡', text: 'Invoices processed in seconds, not minutes' },
                 { icon: '✓', text: 'Every invoice verified before posting' },
                 { icon: '🔄', text: 'Posts directly to your accounting software' },
                 { icon: '📄', text: 'Works with any vendor — no templates needed' },
               ].map((f) => (
-                <div key={f.text} className="flex items-start gap-3 p-4 rounded-xl bg-gray-50 border border-gray-100">
+                <div key={f.text} className="flex items-center gap-4 p-4 rounded-xl bg-gray-50 border border-gray-100">
                   <span className="w-10 h-10 rounded-xl bg-white border border-gray-200 flex items-center justify-center text-lg shrink-0 shadow-sm">{f.icon}</span>
-                  <span className="text-[15px] leading-snug text-gray-800 font-medium pt-1.5">{f.text}</span>
+                  <span className="text-[15px] leading-snug text-gray-800 font-medium">{f.text}</span>
                 </div>
               ))}
             </div>
@@ -148,27 +148,30 @@ export default function InvoiceDemo() {
                   </div>
 
                   <div className="space-y-1.5">
-                    {EXTRACTED_FIELDS.map((field, i) => (
-                      <div
-                        key={field.label}
-                        className={`flex items-center justify-between px-3 py-2 rounded-lg text-xs transition-all duration-300 ${
-                          (phase >= 2 && i < visibleFields) || phase === 3
-                            ? 'bg-gray-50 border border-gray-100 opacity-100 translate-y-0'
-                            : 'border border-transparent opacity-0 translate-y-2'
-                        }`}
-                      >
-                        <span className="text-gray-400 w-24">{field.label}</span>
-                        <span className="font-medium text-gray-800">{field.value}</span>
-                        {((phase >= 2 && i < visibleFields) || phase === 3) && (
-                          <svg className="w-3.5 h-3.5 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                          </svg>
-                        )}
-                      </div>
-                    ))}
+                    {EXTRACTED_FIELDS.map((field, i) => {
+                      const visible = (phase >= 2 && i < visibleFields) || phase === 3
+                      return (
+                        <div
+                          key={field.label}
+                          className={`flex items-center justify-between px-3 py-2 rounded-lg text-xs transition-all duration-300 ${
+                            visible
+                              ? 'bg-gray-50 border border-gray-100 opacity-100 translate-y-0'
+                              : 'h-0 overflow-hidden opacity-0 py-0 my-0 border-0'
+                          }`}
+                        >
+                          <span className="text-gray-400 w-24">{field.label}</span>
+                          <span className="font-medium text-gray-800">{field.value}</span>
+                          {visible && (
+                            <svg className="w-3.5 h-3.5 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                              <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                          )}
+                        </div>
+                      )
+                    })}
                   </div>
 
-                  <div className={`mt-auto pt-3 border-t border-gray-100 flex items-center justify-between transition-opacity duration-300 ${
+                  <div className={`mt-auto pt-4 mb-1 border-t border-gray-100 flex items-center justify-between transition-opacity duration-300 ${
                     phase === 3 ? 'opacity-100' : 'opacity-0'
                   }`}>
                     <span className="text-xs text-gray-400">Verification status</span>
