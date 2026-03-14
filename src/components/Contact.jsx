@@ -64,7 +64,7 @@ export default function Contact() {
               Let's Talk
             </h2>
             <p className="text-gray-500">
-              Tell us about your business and we'll schedule a discovery call.
+              Request your free AI audit or tell us about your business. We'll schedule a discovery call within 24 hours.
             </p>
           </div>
 
@@ -131,7 +131,7 @@ export default function Contact() {
                   value={form.message}
                   onChange={handleChange}
                   className="w-full px-4 py-2.5 text-sm border bg-gray-50 border-gray-200 text-gray-900 placeholder:text-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900/20 focus:border-gray-300 resize-none transition-all"
-                  placeholder="Tell us about your business..."
+                  placeholder="I'd like a free AI audit for my business..."
                 />
               </div>
               <button

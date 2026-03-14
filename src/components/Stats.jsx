@@ -16,7 +16,7 @@ export default function Stats() {
                 key={stat.label}
                 className="relative text-center py-6 px-4 bg-gray-50 border border-gray-100 rounded-2xl"
               >
-                <p className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-[-0.02em] text-gray-900 mb-1">
+                <p className="text-xl sm:text-3xl md:text-4xl font-semibold tracking-[-0.02em] text-gray-900 mb-1">
                   {stat.value}
                 </p>
                 <p className="text-xs sm:text-sm text-gray-500">{stat.label}</p>

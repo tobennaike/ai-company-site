@@ -47,7 +47,7 @@ export default function Navbar() {
             href="#contact"
             className="inline-flex items-center justify-center bg-gray-900 text-white text-sm font-medium h-9 px-5 rounded-full hover:bg-gray-800 hover:shadow-lg hover:-translate-y-px transition-all duration-200"
           >
-            Get Started
+            Free AI Audit
           </a>
         </div>
 
@@ -88,7 +88,7 @@ export default function Navbar() {
             onClick={() => setMenuOpen(false)}
             className="block text-center bg-gray-900 text-white text-sm font-medium py-2.5 rounded-full mt-3 hover:bg-gray-800 transition-colors"
           >
-            Get Started
+            Free AI Audit
           </a>
         </div>
       )}
