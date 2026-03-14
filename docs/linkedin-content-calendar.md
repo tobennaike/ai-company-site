@@ -1,5 +1,5 @@
-# Auxo Partners — LinkedIn Content Calendar (4-Week Plan)
-**Author:** Tobenna Ikejiani, Co-Founder, Auxo Partners
+# Auxo Solutions — LinkedIn Content Calendar (4-Week Plan)
+**Author:** Tobenna Ikejiani, Co-Founder, Auxo Solutions
 **Cadence:** Mon / Wed / Fri
 **Audience:** Accounting firm owners, healthcare finance operators, SMB operators (Atlanta/Southeast, $1–10MM revenue)
 **Goal:** Build credibility → generate inbound leads → support outbound
@@ -20,7 +20,7 @@
 
 | Day | Topic / Angle | Hook (First Line) | Format | CTA |
 |---|---|---|---|---|
-| **Mon** | Personal story: Why I started Auxo Partners | "I watched my family's accounting firm lose $40K/year to work that a $300/mo AI could do. That's when I knew the problem was everywhere." | TEXT | "If your firm is doing the same — DM me. I'll show you where the leak is." |
+| **Mon** | Personal story: Why I started Auxo Solutions | "I watched my family's accounting firm lose $40K/year to work that a $300/mo AI could do. That's when I knew the problem was everywhere." | TEXT | "If your firm is doing the same — DM me. I'll show you where the leak is." |
 | **Wed** | Tactical: 3 tasks every accounting firm should stop doing manually | "Your staff is doing the work of a $50/hr human. AI does it for $0.002 per task. Here's what to automate first:" | CAROUSEL | "Drop a comment with which one is killing your team's time." |
 | **Fri** | Contrarian take: "AI won't replace your accountants — but it will replace the ones who ignore it" | "The accounting firms that survive the next 5 years won't be the biggest. They'll be the most automated." | TEXT | "What's the one thing you'd automate tomorrow if you could? Tell me below." |
 
@@ -30,7 +30,7 @@
 
 | Day | Topic / Angle | Hook (First Line) | Format | CTA |
 |---|---|---|---|---|
-| **Mon** | Tactical: How AI doc processing cut a firm's invoice reconciliation from 4 hours to 22 minutes | "4 hours → 22 minutes. Same work. No new hires. Here's the exact flow we built:" | CAROUSEL | "This is what we do at Auxo Partners. Want to see how it applies to your firm? DM me." |
+| **Mon** | Tactical: How AI doc processing cut a firm's invoice reconciliation from 4 hours to 22 minutes | "4 hours → 22 minutes. Same work. No new hires. Here's the exact flow we built:" | CAROUSEL | "This is what we do at Auxo Solutions. Want to see how it applies to your firm? DM me." |
 | **Wed** | Contrarian take: "Your CRM is useless without automation behind it" | "Most SMB owners pay $300/mo for a CRM and still follow up manually. That's not a software problem. That's a system problem." | TEXT | "Tag a business owner who needs to hear this." |
 | **Fri** | Personal story: What Brad Jacobs' operator mindset taught me about AI adoption | "Brad Jacobs built $100B in enterprise value by finding inefficiency and eliminating it faster than everyone else. That's exactly what AI does for your back office." | TEXT | "Follow me if you want the operator's take on AI — not the tech bro version." |
 
@@ -78,7 +78,7 @@
 > - People looking for chatbots and gimmicks
 > - Firms not ready to invest in real systems
 >
-> Auxo Partners builds fractional AI departments for SMBs. Our clients typically reclaim 15–30 hours/week in the first 90 days.
+> Auxo Solutions builds fractional AI departments for SMBs. Our clients typically reclaim 15–30 hours/week in the first 90 days.
 >
 > Implementation starts at $5K. Monthly ops support from $1,500.
 >
@@ -110,4 +110,4 @@
 
 ---
 
-*Last updated: 2026-03-13 | Auxo Partners*
+*Last updated: 2026-03-13 | Auxo Solutions*

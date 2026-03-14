@@ -18,7 +18,7 @@ export default function About() {
         <div className="text-center mb-16 sm:mb-20">
           <span className="inline-flex items-center text-xs font-medium bg-gray-100 text-gray-600 border border-gray-200 px-3 py-1 rounded-full mb-4 uppercase tracking-widest">Team</span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal tracking-[-0.02em] mb-4 text-gray-900">
-            Meet the Partners
+            Meet the Team
           </h2>
           <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto">
             We've operated, advised, and invested across industries. Now we build

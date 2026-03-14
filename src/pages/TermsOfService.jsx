@@ -8,7 +8,7 @@ export default function TermsOfService() {
         <div className="container flex items-center justify-between h-16">
           <Link to="/" className="flex flex-col leading-none">
             <span className="text-[20px] font-bold tracking-[-0.03em] text-gray-900">Auxo</span>
-            <span className="text-[10px] font-semibold tracking-[0.15em] text-gray-400 uppercase">Partners</span>
+            <span className="text-[10px] font-semibold tracking-[0.15em] text-gray-400 uppercase">Solutions</span>
           </Link>
           <Link to="/" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
             &larr; Back to Home
@@ -129,7 +129,7 @@ export default function TermsOfService() {
             <h2 className="text-lg font-semibold text-gray-900 mb-3">12. Contact Us</h2>
             <p>
               If you have questions about these Terms, please contact us at{' '}
-              <a href="mailto:hello@auxopartners.ai" className="text-gray-900 underline hover:no-underline">hello@auxopartners.ai</a>.
+              <a href="mailto:hello@auxosolutions.ai" className="text-gray-900 underline hover:no-underline">hello@auxosolutions.ai</a>.
             </p>
           </section>
         </div>

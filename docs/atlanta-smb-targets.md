@@ -1,4 +1,4 @@
-# Auxo Partners — Atlanta SMB Outbound Target List
+# Auxo Solutions — Atlanta SMB Outbound Target List
 
 **Generated:** 2026-03-13
 **ICP:** Owner-operated SMBs, $1–10MM revenue, 5–50 employees, repetitive back-office ops, pre-AI
@@ -52,4 +52,4 @@
 
 ---
 
-*Source: Built from knowledge of Atlanta business landscape, ICP criteria, and Auxo Partners product set. Specific company names should be verified via LinkedIn/Google before outreach. Firm-type entries (e.g., "Cobb County CPA Group") represent archetypes — search the named geography + vertical to find real targets.*
+*Source: Built from knowledge of Atlanta business landscape, ICP criteria, and Auxo Solutions product set. Specific company names should be verified via LinkedIn/Google before outreach. Firm-type entries (e.g., "Cobb County CPA Group") represent archetypes — search the named geography + vertical to find real targets.*

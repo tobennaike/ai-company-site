@@ -1,5 +1,5 @@
-# RCN Call Prep — Auxo Partners Partnership
-**Caller:** Tobenna Ikejiani, Founder — Auxo Partners
+# RCN Call Prep — Auxo Solutions Partnership
+**Caller:** Tobenna Ikejiani, Founder — Auxo Solutions
 **Date:** March 2026
 **Format:** Warm intro / family relationship — keep it conversational, not salesy
 
@@ -14,7 +14,7 @@ Get RCN CPAs to commit to a pilot partnership: identify 3-5 existing clients wil
 ## 2. Opening Pitch
 *(Say this verbatim or close to it)*
 
-> "I wanted to loop you in on something I've been building — Auxo Partners. The short version: we build AI-powered systems for small businesses — automating their sales follow-up, invoicing, customer support, financial reporting. We're targeting firms in the $1-10M range, and I think RCN's client base is a perfect fit.
+> "I wanted to loop you in on something I've been building — Auxo Solutions. The short version: we build AI-powered systems for small businesses — automating their sales follow-up, invoicing, customer support, financial reporting. We're targeting firms in the $1-10M range, and I think RCN's client base is a perfect fit.
 >
 > What I'm proposing is a partnership where we run free pilots for 3-5 of your clients. You take zero risk — we do all the work. If they convert to paying clients, RCN earns 15-20% of that revenue as a referral fee, ongoing. I just want to walk you through what that could look like."
 
@@ -81,4 +81,4 @@ Get RCN CPAs to commit to a pilot partnership: identify 3-5 existing clients wil
 
 ---
 
-*Auxo Partners — auxopartners.com*
+*Auxo Solutions — auxosolutions.com*

@@ -136,7 +136,7 @@ const html = `<!DOCTYPE html>
 
 <!-- COVER -->
 <div class="cover">
-  <div class="cover-logo"><span>Auxo</span> Partners &mdash; Confidential</div>
+  <div class="cover-logo"><span>Auxo</span> Solutions &mdash; Confidential</div>
   <div>
     <div class="cover-title"><strong>Invoice &amp;</strong><br>Document Processor</div>
     <div class="cover-subtitle">Product #2 &mdash; AI-Powered Extraction, Routing &amp; QuickBooks Integration</div>
@@ -506,7 +506,7 @@ const html = `<!DOCTYPE html>
 <div class="back-cover">
   <h2>Ship It. <strong>Week 3.</strong></h2>
   <p>Upload an invoice. Get a QB Bill. No templates. No manual entry.</p>
-  <div class="url">Auxo Partners &middot; Confidential &mdash; Internal Use Only</div>
+  <div class="url">Auxo Solutions &middot; Confidential &mdash; Internal Use Only</div>
 </div>
 
 </body>

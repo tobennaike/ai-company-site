@@ -1,1 +1,1 @@
-export const COMPANY_NAME = "Auxo Partners"
+export const COMPANY_NAME = "Auxo Solutions"

@@ -148,7 +148,7 @@ const html = `<!DOCTYPE html>
 
 <!-- COVER -->
 <div class="cover">
-  <div class="cover-logo"><span>Auxo</span> Partners — Confidential</div>
+  <div class="cover-logo"><span>Auxo</span> Solutions — Confidential</div>
   <div>
     <div class="cover-title"><strong>90-Day</strong><br>Execution Plan</div>
     <div class="cover-subtitle">AI Automation for SMBs — From Zero to $15K MRR</div>
