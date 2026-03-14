@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 const EXTRACTED_FIELDS = [
-  { label: 'Vendor', value: 'Acme Supply Co.' },
+  { label: 'Vendor', value: 'Nexcore Technologies' },
   { label: 'Invoice #', value: 'INV-2024-0847' },
   { label: 'Invoice Date', value: 'Mar 1, 2024' },
   { label: 'Due Date', value: 'Mar 31, 2024' },
@@ -115,7 +115,7 @@ export default function InvoiceDemo() {
                           <div className="w-4 h-1 bg-gray-200 rounded-full" />
                         </div>
                       </div>
-                      <p className="text-xs font-medium text-gray-700 mb-1">Acme_Invoice_March.pdf</p>
+                      <p className="text-xs font-medium text-gray-700 mb-1">Nexcore_Invoice_March.pdf</p>
                       <p className="text-xs text-gray-400">Drop to process</p>
                     </div>
                   </div>
@@ -152,7 +152,7 @@ export default function InvoiceDemo() {
                           <div className="w-2 h-0.5 bg-gray-300 rounded" />
                         </div>
                       </div>
-                      <span className="text-xs font-medium text-gray-700">Acme_Invoice_March.pdf</span>
+                      <span className="text-xs font-medium text-gray-700">Nexcore_Invoice_March.pdf</span>
                       {phase === 3 && (
                         <span className="ml-auto text-xs font-medium text-emerald-600 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full">
                           Auto-posted to QuickBooks
