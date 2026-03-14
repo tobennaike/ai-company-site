@@ -109,8 +109,12 @@ html {
 }
 
 @keyframes progress {
-  from { width: 0% }
-  to { width: 100% }
+  0% { width: 0% }
+  100% { width: 100% }
+}
+
+.demo-progress-bar {
+  animation: progress 1800ms ease-in-out forwards;
 }
 
 /* Connector line for steps */

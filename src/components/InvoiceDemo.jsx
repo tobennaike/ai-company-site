@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 const EXTRACTED_FIELDS = [
   { label: 'Vendor', value: 'Nexcore Technologies' },
@@ -10,20 +10,31 @@ const EXTRACTED_FIELDS = [
   { label: 'Total', value: '$4,028.00' },
 ]
 
-// Phases: 0=upload, 1=processing, 2=extracting, 3=done
-const PHASE_DURATIONS = [2200, 1800, 3200, 3000]
+// Phases: 0=upload, 1=processing, 2=extracting, 3=done, 4=fade-out (before restart)
+const PHASE_DURATIONS = [2200, 1800, 3200, 2400, 600]
 
 export default function InvoiceDemo() {
   const [phase, setPhase] = useState(0)
   const [visibleFields, setVisibleFields] = useState(0)
+  const progressKey = useRef(0)
 
   useEffect(() => {
     let timeout
     const advance = (current) => {
       timeout = setTimeout(() => {
-        const next = (current + 1) % 4
+        let next
+        if (current === 4) {
+          // After fade-out, reset fields and go back to upload
+          next = 0
+          setVisibleFields(0)
+          progressKey.current++
+        } else if (current === 3) {
+          // After done, enter fade-out phase
+          next = 4
+        } else {
+          next = current + 1
+        }
         setPhase(next)
-        if (next === 0) setVisibleFields(0)
         advance(next)
       }, PHASE_DURATIONS[current])
     }
@@ -96,10 +107,10 @@ export default function InvoiceDemo() {
               {/* Content area — fixed height, no layout shifts */}
               <div className="p-6 h-[440px] flex flex-col overflow-hidden">
                 {/* Upload & Processing overlay */}
-                <div className={`absolute inset-0 flex flex-col items-center justify-center z-10 bg-white transition-opacity duration-300 ${
+                <div className={`absolute inset-0 flex flex-col items-center justify-center z-10 bg-white transition-opacity duration-500 ${
                   phase <= 1 ? 'opacity-100' : 'opacity-0 pointer-events-none'
                 }`}>
-                  {phase === 0 ? (
+                  {phase <= 1 && phase === 0 ? (
                     <div className="w-full max-w-xs border-2 border-dashed border-gray-200 rounded-xl p-8 text-center bg-gray-50">
                       <div className="animate-bounce mb-3">
                         <div className="w-12 h-14 mx-auto bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col items-center justify-center gap-1">
@@ -112,7 +123,7 @@ export default function InvoiceDemo() {
                       <p className="text-xs font-medium text-gray-700 mb-1">Nexcore_Invoice_March.pdf</p>
                       <p className="text-xs text-gray-400">Drop to process</p>
                     </div>
-                  ) : (
+                  ) : phase === 1 ? (
                     <div className="flex flex-col items-center gap-4">
                       <div className="flex gap-1.5">
                         {[0, 1, 2].map((i) => (
@@ -121,15 +132,20 @@ export default function InvoiceDemo() {
                       </div>
                       <p className="text-sm text-gray-500">Extracting fields with AI...</p>
                       <div className="w-48 h-1.5 bg-gray-100 rounded-full overflow-hidden">
-                        <div className="h-full bg-gray-400 rounded-full" style={{ animation: 'progress 1.8s ease-in-out forwards' }} />
+                        <div key={progressKey.current} className="h-full bg-gray-400 rounded-full demo-progress-bar" />
                       </div>
                     </div>
-                  )}
+                  ) : null}
                 </div>
 
+                {/* Fade-out overlay — covers everything during phase 4 restart */}
+                <div className={`absolute inset-0 z-20 bg-white transition-opacity duration-500 pointer-events-none ${
+                  phase === 4 ? 'opacity-100' : 'opacity-0'
+                }`} />
+
                 {/* Extraction results — always rendered, fades in */}
-                <div className={`flex-1 flex flex-col gap-3 transition-opacity duration-300 ${
-                  phase >= 2 ? 'opacity-100' : 'opacity-0'
+                <div className={`flex-1 flex flex-col gap-3 transition-opacity duration-500 ${
+                  phase >= 2 && phase <= 3 ? 'opacity-100' : 'opacity-0'
                 }`}>
                   <div className="flex items-center gap-2 mb-1">
                     <div className="w-6 h-7 bg-gray-100 border border-gray-200 rounded flex items-center justify-center shrink-0">
