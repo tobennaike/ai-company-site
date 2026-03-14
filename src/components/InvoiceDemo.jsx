@@ -64,7 +64,7 @@ export default function InvoiceDemo() {
           {/* Left: Stats */}
           <div className="space-y-6">
             {[
-              { value: '94%', label: 'Auto-posted without human review', sub: 'Confidence threshold > 95%' },
+              { value: '$0', label: 'Posting errors from duplicate or incorrect invoices', sub: 'Every invoice verified before QuickBooks' },
               { value: '< 4s', label: 'Average processing time per invoice', sub: 'From upload to QuickBooks' },
               { value: '18 hrs', label: 'Saved per month per client', sub: 'At 3 min/invoice manual avg' },
             ].map((stat) => (
