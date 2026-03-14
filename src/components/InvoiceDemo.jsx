@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react'
 
 const EXTRACTED_FIELDS = [
   { label: 'Vendor', value: 'Nexcore Technologies' },
-  { label: 'Invoice #', value: 'INV-2024-0847' },
-  { label: 'Invoice Date', value: 'Mar 1, 2024' },
-  { label: 'Due Date', value: 'Mar 31, 2024' },
+  { label: 'Invoice #', value: 'INV-2026-0847' },
+  { label: 'Invoice Date', value: 'Mar 1, 2026' },
+  { label: 'Due Date', value: 'Mar 31, 2026' },
   { label: 'Subtotal', value: '$3,800.00' },
   { label: 'Tax (6%)', value: '$228.00' },
   { label: 'Total', value: '$4,028.00' },
