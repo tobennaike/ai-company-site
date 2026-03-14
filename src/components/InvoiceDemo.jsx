@@ -77,7 +77,7 @@ export default function InvoiceDemo() {
             <div className="grid grid-cols-1 gap-4">
               {[
                 { icon: '⚡', text: 'Invoices processed in seconds, not minutes' },
-                { icon: '✓', text: 'Every invoice verified before posting' },
+                { icon: '✅', text: 'Every invoice verified before posting' },
                 { icon: '🔄', text: 'Posts directly to your accounting software' },
                 { icon: '📄', text: 'Works with any vendor — no templates needed' },
               ].map((f) => (
