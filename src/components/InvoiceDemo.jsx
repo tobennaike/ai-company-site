@@ -60,7 +60,7 @@ export default function InvoiceDemo() {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-8 items-center">
           {/* Left: Features + badges */}
           <div className="space-y-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -94,7 +94,7 @@ export default function InvoiceDemo() {
               </div>
 
               {/* Content area — fixed height, no layout shifts */}
-              <div className="p-5 h-[380px] flex flex-col overflow-hidden">
+              <div className="p-6 h-[440px] flex flex-col overflow-hidden">
                 {/* Upload & Processing overlay */}
                 <div className={`absolute inset-0 flex flex-col items-center justify-center z-10 bg-white transition-opacity duration-300 ${
                   phase <= 1 ? 'opacity-100' : 'opacity-0 pointer-events-none'
@@ -154,7 +154,7 @@ export default function InvoiceDemo() {
                         className={`flex items-center justify-between px-3 py-2 rounded-lg text-xs transition-all duration-300 ${
                           (phase >= 2 && i < visibleFields) || phase === 3
                             ? 'bg-gray-50 border border-gray-100 opacity-100 translate-y-0'
-                            : 'bg-gray-50 border border-transparent opacity-0 translate-y-1'
+                            : 'border border-transparent opacity-0 translate-y-2'
                         }`}
                       >
                         <span className="text-gray-400 w-24">{field.label}</span>
