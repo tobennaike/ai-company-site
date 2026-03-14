@@ -62,22 +62,22 @@ export default function InvoiceDemo() {
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left: Features + badges */}
-          <div className="space-y-6">
-            <div className="space-y-4">
+          <div className="space-y-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               {[
                 { icon: '⚡', text: 'Invoices processed in seconds, not minutes' },
                 { icon: '✓', text: 'Every invoice verified before posting' },
                 { icon: '🔄', text: 'Posts directly to your accounting software' },
                 { icon: '📄', text: 'Works with any vendor — no templates needed' },
               ].map((f) => (
-                <div key={f.text} className="flex items-center gap-3">
-                  <span className="w-8 h-8 rounded-lg bg-gray-100 border border-gray-200 flex items-center justify-center text-sm shrink-0">{f.icon}</span>
-                  <span className="text-sm text-gray-700">{f.text}</span>
+                <div key={f.text} className="flex items-start gap-3 p-4 rounded-xl bg-gray-50 border border-gray-100">
+                  <span className="w-10 h-10 rounded-xl bg-white border border-gray-200 flex items-center justify-center text-lg shrink-0 shadow-sm">{f.icon}</span>
+                  <span className="text-[15px] leading-snug text-gray-800 font-medium pt-1.5">{f.text}</span>
                 </div>
               ))}
             </div>
 
-            <div className="flex flex-wrap gap-2 pt-2">
+            <div className="flex flex-wrap gap-2">
               {['QuickBooks Online', 'Xero', 'PDF', 'DOCX', 'Scanned', 'Multi-page'].map((tag) => (
                 <span key={tag} className="text-xs text-gray-500 bg-white border border-gray-200 px-3 py-1.5 rounded-full">
                   {tag}
