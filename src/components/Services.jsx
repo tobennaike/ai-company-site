@@ -1,6 +1,6 @@
 const services = [
   {
-    title: 'Custom AI Software',
+    title: 'Custom AI Solutions',
     description: 'Bespoke AI tools and workflows built specifically for your business. From internal dashboards to automated decision engines — tailored to how you operate.',
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
