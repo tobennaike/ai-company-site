@@ -150,22 +150,17 @@ export default function InvoiceDemo() {
                   <div className="space-y-1.5">
                     {EXTRACTED_FIELDS.map((field, i) => {
                       const visible = (phase >= 2 && i < visibleFields) || phase === 3
+                      if (!visible) return null
                       return (
                         <div
                           key={field.label}
-                          className={`flex items-center justify-between px-3 py-2 rounded-lg text-xs transition-all duration-300 ${
-                            visible
-                              ? 'bg-gray-50 border border-gray-100 opacity-100 translate-y-0'
-                              : 'h-0 overflow-hidden opacity-0 py-0 my-0 border-0'
-                          }`}
+                          className="flex items-center justify-between px-3 py-2 rounded-lg text-xs bg-gray-50 border border-gray-100 animate-fade-up"
                         >
                           <span className="text-gray-400 w-24">{field.label}</span>
                           <span className="font-medium text-gray-800">{field.value}</span>
-                          {visible && (
-                            <svg className="w-3.5 h-3.5 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                              <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                            </svg>
-                          )}
+                          <svg className="w-3.5 h-3.5 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                          </svg>
                         </div>
                       )
                     })}
@@ -183,12 +178,16 @@ export default function InvoiceDemo() {
               </div>
             </div>
 
-            {/* Floating badges */}
-            <div className="absolute -right-4 top-8 bg-white border border-gray-200 rounded-xl px-3 py-2 shadow-lg shadow-black/5 hidden sm:flex items-center gap-2">
+            {/* Floating badges — only appear in phase 3 */}
+            <div className={`absolute -right-4 top-8 bg-white border border-gray-200 rounded-xl px-3 py-2 shadow-lg shadow-black/5 hidden sm:flex items-center gap-2 transition-all duration-500 ${
+              phase === 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2 pointer-events-none'
+            }`}>
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span className="text-xs font-medium text-gray-700">247 processed this month</span>
+              <span className="text-xs font-medium text-gray-700">368 processed this month</span>
             </div>
-            <div className="absolute -left-4 bottom-10 bg-white border border-gray-200 rounded-xl px-3 py-2 shadow-lg shadow-black/5 hidden sm:flex items-center gap-2">
+            <div className={`absolute -left-4 -bottom-4 bg-white border border-gray-200 rounded-xl px-3 py-2 shadow-lg shadow-black/5 hidden sm:flex items-center gap-2 transition-all duration-500 ${
+              phase === 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2 pointer-events-none'
+            }`}>
               <span className="text-xs font-medium text-gray-700">18.5 hrs saved</span>
               <svg className="w-3.5 h-3.5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
