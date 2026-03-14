@@ -61,24 +61,24 @@ export default function InvoiceDemo() {
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Left: Stats */}
+          {/* Left: Features + badges */}
           <div className="space-y-6">
-            {[
-              { value: '< 4s', label: 'Average processing time per invoice', sub: 'From upload to QuickBooks' },
-              { value: '18 hrs', label: 'Saved per month per client', sub: 'At 3 min/invoice manual avg' },
-              { value: 'Any format', label: 'No templates — works with every vendor', sub: 'PDF, scan, image, DOCX' },
-            ].map((stat) => (
-              <div key={stat.value} className="flex items-start gap-5 p-5 rounded-2xl bg-gray-50 border border-gray-100">
-                <div className="text-3xl font-semibold tracking-tight text-gray-900 w-20 shrink-0">{stat.value}</div>
-                <div>
-                  <div className="text-sm font-medium text-gray-800 mb-0.5">{stat.label}</div>
-                  <div className="text-xs text-gray-400">{stat.sub}</div>
+            <div className="space-y-4">
+              {[
+                { icon: '⚡', text: 'Invoices processed in seconds, not minutes' },
+                { icon: '✓', text: 'Every invoice verified before posting' },
+                { icon: '🔄', text: 'Posts directly to your accounting software' },
+                { icon: '📄', text: 'Works with any vendor — no templates needed' },
+              ].map((f) => (
+                <div key={f.text} className="flex items-center gap-3">
+                  <span className="w-8 h-8 rounded-lg bg-gray-100 border border-gray-200 flex items-center justify-center text-sm shrink-0">{f.icon}</span>
+                  <span className="text-sm text-gray-700">{f.text}</span>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
 
             <div className="flex flex-wrap gap-2 pt-2">
-              {['QuickBooks Online', 'Xero', 'PDF / DOCX', 'Scanned Invoices', 'Multi-page', 'Foreign Currency'].map((tag) => (
+              {['QuickBooks Online', 'Xero', 'PDF', 'DOCX', 'Scanned', 'Multi-page'].map((tag) => (
                 <span key={tag} className="text-xs text-gray-500 bg-white border border-gray-200 px-3 py-1.5 rounded-full">
                   {tag}
                 </span>
